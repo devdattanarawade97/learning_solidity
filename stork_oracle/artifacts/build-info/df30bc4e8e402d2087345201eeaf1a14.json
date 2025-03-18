@@ -1,0 +1,332 @@
+{
+	"id": "df30bc4e8e402d2087345201eeaf1a14",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.8.26",
+	"solcLongVersion": "0.8.26+commit.8a97fa7a",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"stork_oracle/IStork.sol": {
+				"content": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.0;\r\n\r\ninterface IStork {\r\n    struct TemporalNumericValue {\r\n        uint64 timestampNs;\r\n        int192 quantizedValue;\r\n    }\r\n\r\n    function getTemporalNumericValueUnsafeV1(bytes32 id) external view returns (TemporalNumericValue memory value);\r\n}\r\n"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			},
+			"remappings": []
+		}
+	},
+	"output": {
+		"contracts": {
+			"stork_oracle/IStork.sol": {
+				"IStork": {
+					"abi": [
+						{
+							"inputs": [
+								{
+									"internalType": "bytes32",
+									"name": "id",
+									"type": "bytes32"
+								}
+							],
+							"name": "getTemporalNumericValueUnsafeV1",
+							"outputs": [
+								{
+									"components": [
+										{
+											"internalType": "uint64",
+											"name": "timestampNs",
+											"type": "uint64"
+										},
+										{
+											"internalType": "int192",
+											"name": "quantizedValue",
+											"type": "int192"
+										}
+									],
+									"internalType": "struct IStork.TemporalNumericValue",
+									"name": "value",
+									"type": "tuple"
+								}
+							],
+							"stateMutability": "view",
+							"type": "function"
+						}
+					],
+					"devdoc": {
+						"kind": "dev",
+						"methods": {},
+						"version": 1
+					},
+					"evm": {
+						"assembly": "",
+						"bytecode": {
+							"functionDebugData": {},
+							"generatedSources": [],
+							"linkReferences": {},
+							"object": "",
+							"opcodes": "",
+							"sourceMap": ""
+						},
+						"deployedBytecode": {
+							"functionDebugData": {},
+							"generatedSources": [],
+							"immutableReferences": {},
+							"linkReferences": {},
+							"object": "",
+							"opcodes": "",
+							"sourceMap": ""
+						},
+						"gasEstimates": null,
+						"legacyAssembly": null,
+						"methodIdentifiers": {
+							"getTemporalNumericValueUnsafeV1(bytes32)": "f69058c1"
+						}
+					},
+					"metadata": "{\"compiler\":{\"version\":\"0.8.26+commit.8a97fa7a\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"id\",\"type\":\"bytes32\"}],\"name\":\"getTemporalNumericValueUnsafeV1\",\"outputs\":[{\"components\":[{\"internalType\":\"uint64\",\"name\":\"timestampNs\",\"type\":\"uint64\"},{\"internalType\":\"int192\",\"name\":\"quantizedValue\",\"type\":\"int192\"}],\"internalType\":\"struct IStork.TemporalNumericValue\",\"name\":\"value\",\"type\":\"tuple\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"stork_oracle/IStork.sol\":\"IStork\"},\"evmVersion\":\"cancun\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"stork_oracle/IStork.sol\":{\"keccak256\":\"0x95df6431f7106290df3284b1bcd13fe02ab308f3d545b4e03d2400d3e99a032c\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://922ab08061d74031797a6b41e5235e57f26fc2a23dbf2aa998387ed6c79ca1ec\",\"dweb:/ipfs/QmTzeXpDfJ5JXwUyUS1myG6y4fB6uN4uurBs2WbikJuo2H\"]}},\"version\":1}",
+					"storageLayout": {
+						"storage": [],
+						"types": null
+					},
+					"userdoc": {
+						"kind": "user",
+						"methods": {},
+						"version": 1
+					}
+				}
+			}
+		},
+		"sources": {
+			"stork_oracle/IStork.sol": {
+				"ast": {
+					"absolutePath": "stork_oracle/IStork.sol",
+					"exportedSymbols": {
+						"IStork": [
+							15
+						]
+					},
+					"id": 16,
+					"license": "MIT",
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								"^",
+								"0.8",
+								".0"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "33:23:0"
+						},
+						{
+							"abstract": false,
+							"baseContracts": [],
+							"canonicalName": "IStork",
+							"contractDependencies": [],
+							"contractKind": "interface",
+							"fullyImplemented": false,
+							"id": 15,
+							"linearizedBaseContracts": [
+								15
+							],
+							"name": "IStork",
+							"nameLocation": "70:6:0",
+							"nodeType": "ContractDefinition",
+							"nodes": [
+								{
+									"canonicalName": "IStork.TemporalNumericValue",
+									"id": 6,
+									"members": [
+										{
+											"constant": false,
+											"id": 3,
+											"mutability": "mutable",
+											"name": "timestampNs",
+											"nameLocation": "130:11:0",
+											"nodeType": "VariableDeclaration",
+											"scope": 6,
+											"src": "123:18:0",
+											"stateVariable": false,
+											"storageLocation": "default",
+											"typeDescriptions": {
+												"typeIdentifier": "t_uint64",
+												"typeString": "uint64"
+											},
+											"typeName": {
+												"id": 2,
+												"name": "uint64",
+												"nodeType": "ElementaryTypeName",
+												"src": "123:6:0",
+												"typeDescriptions": {
+													"typeIdentifier": "t_uint64",
+													"typeString": "uint64"
+												}
+											},
+											"visibility": "internal"
+										},
+										{
+											"constant": false,
+											"id": 5,
+											"mutability": "mutable",
+											"name": "quantizedValue",
+											"nameLocation": "159:14:0",
+											"nodeType": "VariableDeclaration",
+											"scope": 6,
+											"src": "152:21:0",
+											"stateVariable": false,
+											"storageLocation": "default",
+											"typeDescriptions": {
+												"typeIdentifier": "t_int192",
+												"typeString": "int192"
+											},
+											"typeName": {
+												"id": 4,
+												"name": "int192",
+												"nodeType": "ElementaryTypeName",
+												"src": "152:6:0",
+												"typeDescriptions": {
+													"typeIdentifier": "t_int192",
+													"typeString": "int192"
+												}
+											},
+											"visibility": "internal"
+										}
+									],
+									"name": "TemporalNumericValue",
+									"nameLocation": "91:20:0",
+									"nodeType": "StructDefinition",
+									"scope": 15,
+									"src": "84:97:0",
+									"visibility": "public"
+								},
+								{
+									"functionSelector": "f69058c1",
+									"id": 14,
+									"implemented": false,
+									"kind": "function",
+									"modifiers": [],
+									"name": "getTemporalNumericValueUnsafeV1",
+									"nameLocation": "198:31:0",
+									"nodeType": "FunctionDefinition",
+									"parameters": {
+										"id": 9,
+										"nodeType": "ParameterList",
+										"parameters": [
+											{
+												"constant": false,
+												"id": 8,
+												"mutability": "mutable",
+												"name": "id",
+												"nameLocation": "238:2:0",
+												"nodeType": "VariableDeclaration",
+												"scope": 14,
+												"src": "230:10:0",
+												"stateVariable": false,
+												"storageLocation": "default",
+												"typeDescriptions": {
+													"typeIdentifier": "t_bytes32",
+													"typeString": "bytes32"
+												},
+												"typeName": {
+													"id": 7,
+													"name": "bytes32",
+													"nodeType": "ElementaryTypeName",
+													"src": "230:7:0",
+													"typeDescriptions": {
+														"typeIdentifier": "t_bytes32",
+														"typeString": "bytes32"
+													}
+												},
+												"visibility": "internal"
+											}
+										],
+										"src": "229:12:0"
+									},
+									"returnParameters": {
+										"id": 13,
+										"nodeType": "ParameterList",
+										"parameters": [
+											{
+												"constant": false,
+												"id": 12,
+												"mutability": "mutable",
+												"name": "value",
+												"nameLocation": "293:5:0",
+												"nodeType": "VariableDeclaration",
+												"scope": 14,
+												"src": "265:33:0",
+												"stateVariable": false,
+												"storageLocation": "memory",
+												"typeDescriptions": {
+													"typeIdentifier": "t_struct$_TemporalNumericValue_$6_memory_ptr",
+													"typeString": "struct IStork.TemporalNumericValue"
+												},
+												"typeName": {
+													"id": 11,
+													"nodeType": "UserDefinedTypeName",
+													"pathNode": {
+														"id": 10,
+														"name": "TemporalNumericValue",
+														"nameLocations": [
+															"265:20:0"
+														],
+														"nodeType": "IdentifierPath",
+														"referencedDeclaration": 6,
+														"src": "265:20:0"
+													},
+													"referencedDeclaration": 6,
+													"src": "265:20:0",
+													"typeDescriptions": {
+														"typeIdentifier": "t_struct$_TemporalNumericValue_$6_storage_ptr",
+														"typeString": "struct IStork.TemporalNumericValue"
+													}
+												},
+												"visibility": "internal"
+											}
+										],
+										"src": "264:35:0"
+									},
+									"scope": 15,
+									"src": "189:111:0",
+									"stateMutability": "view",
+									"virtual": false,
+									"visibility": "external"
+								}
+							],
+							"scope": 16,
+							"src": "60:243:0",
+							"usedErrors": [],
+							"usedEvents": []
+						}
+					],
+					"src": "33:272:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}

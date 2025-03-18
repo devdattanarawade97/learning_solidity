@@ -1,0 +1,104 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_storkAddress",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "btcUSD",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getBTCUSDPrice",
+				"outputs": [
+					{
+						"internalType": "int192",
+						"name": "",
+						"type": "int192"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "stork",
+				"outputs": [
+					{
+						"internalType": "contract IStork",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"stork_oracle/Contracts/StorkPriceConsumer.sol": "StorkPriceConsumer"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"stork_oracle/Contracts/StorkPriceConsumer.sol": {
+			"keccak256": "0xd8533a86e2c1a40daec1cf844e9b818567cd15f5201da637d80df4bef4b8fb33",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://4ccfab95641b2c6600ed35e8b7a41dca459225326880605526907a4ee5f427ba",
+				"dweb:/ipfs/QmZENcM5nVRceDqNdsVYFawXQDaQbppJvp8xPGCq1i13VL"
+			]
+		},
+		"stork_oracle/Interfaces/IStork.sol": {
+			"keccak256": "0x95df6431f7106290df3284b1bcd13fe02ab308f3d545b4e03d2400d3e99a032c",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://922ab08061d74031797a6b41e5235e57f26fc2a23dbf2aa998387ed6c79ca1ec",
+				"dweb:/ipfs/QmTzeXpDfJ5JXwUyUS1myG6y4fB6uN4uurBs2WbikJuo2H"
+			]
+		}
+	},
+	"version": 1
+}

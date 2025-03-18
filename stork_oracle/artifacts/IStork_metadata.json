@@ -1,0 +1,77 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "id",
+						"type": "bytes32"
+					}
+				],
+				"name": "getTemporalNumericValueUnsafeV1",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint64",
+								"name": "timestampNs",
+								"type": "uint64"
+							},
+							{
+								"internalType": "int192",
+								"name": "quantizedValue",
+								"type": "int192"
+							}
+						],
+						"internalType": "struct IStork.TemporalNumericValue",
+						"name": "value",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"stork_oracle/IStork.sol": "IStork"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"stork_oracle/IStork.sol": {
+			"keccak256": "0x95df6431f7106290df3284b1bcd13fe02ab308f3d545b4e03d2400d3e99a032c",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://922ab08061d74031797a6b41e5235e57f26fc2a23dbf2aa998387ed6c79ca1ec",
+				"dweb:/ipfs/QmTzeXpDfJ5JXwUyUS1myG6y4fB6uN4uurBs2WbikJuo2H"
+			]
+		}
+	},
+	"version": 1
+}
