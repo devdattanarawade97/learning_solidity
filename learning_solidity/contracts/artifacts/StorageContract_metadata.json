@@ -1,0 +1,72 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "getNumber",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_num",
+						"type": "uint256"
+					}
+				],
+				"name": "setNumber",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"learning_solidity/contracts/StoreNumber.sol": "StorageContract"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"learning_solidity/contracts/StoreNumber.sol": {
+			"keccak256": "0x5b614661c04d74ba6d9d8f2563f9653f700a8aecbb373cbf5f4315262929b352",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://d5e15ade530be39fd9964bacee950bd8909f1cea996b4b19d182df66451acfb4",
+				"dweb:/ipfs/Qmeoi7Uc4zpFDcDq4qGaWjSysckrSHFsbompvKeLLQ3qbL"
+			]
+		}
+	},
+	"version": 1
+}
